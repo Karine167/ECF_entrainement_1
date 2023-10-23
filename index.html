@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,14 @@
 <body>
   <header class="row">
     <div class="col col-4">
-      <img src="./asset/Maison_des_jeunes_de_Télimélé_2.jpg" width="100px" alt="Maison des Jeunes">
+      <img src="./photos/Maison_des_jeunes_de_Télimélé_2.jpg" width="100px" alt="Maison des Jeunes">
     </div>
     <h1 class="col col-8 mt-4">Maison des Jeunes</h1>
     <nav class="col navbar m-2 bg-body-tertiary container-fluid justify-content-start"
     aria-label="menu principal">
       <a class="me-2 nav-link" href="#home" active>Présentation</a>
       <a class="m-1 nav-link"  href="#evenements">Evénements</a>
-      <a class="m-1 nav-link"  href="#footer">Nous contacter</a>
+      <a class="m-1 nav-link"  href="#footer">Infos pratiques</a>
     </nav>
   </header>
   <main role="main">
@@ -44,8 +44,8 @@
       <li class="address">13 place de l'église,</li> 
       <li class="address">56234 City-Ville </li>
     </ul>
-    <h4>Notre numéro de téléphone :</h4> 35 45 68 94 25
-    <h4>Notre email :</h4> MJCV@gmail.com
+    <h4>Notre numéro de téléphone :</h4> <a href="tel:0535456894-">05 35 45 68 94</a>
+    <h4>Notre email :</h4> <a href="mailto:MJCV@gmail.com">MJCV@gmail.com</a>
     <h4> Horaires d'ouverture :
       <ul>
         <li>tous les jours de semaine entre 15h et 19h,</li>
@@ -53,57 +53,12 @@
       </ul>
     </h4>
     <hr>
-    <section id="contact" class="m-1">
-      <h2>Nous contacter :</h2>
-      <p class="fs-0 text-bg-light rounded p-1 mt-1"> Pour toutes questions 
-      concernant notre association, nos activités ou si vous souhaitez tout 
-      simplement nous rejoindre, n'hésitez pas à remplir le formulaire ci-dessous, 
-      afin que nous puissions fixer un Rendez-vous pour nous rencontrer.
-      </p>
-      <div class="row">
-          <div class="ps-3 justify-content-center">
-              <form action="" method="POST">
-                  <fieldset> 
-                      <legend class="text-start text-primary bg-light"> Vos 
-                          coordonnées :</legend>
-                      <div class="container text-smaller justify-content-center">
-                          <div class="row mb-3 g-3">
-                              <div>
-                                <label for="nom" class="col-form-label col-3">NOM *:</label>
-                                <input type="text" class="form-control col-9" id="nom" 
-                                  placeholder="Votre nom" required>
-                              </div>
-                              <div>
-                                <label for="prenom2" class="col-form-label col-3">Prenom *:</label>
-                                <input type="text" class="form-control col-9" id="prenom" 
-                                  placeholder="Votre prénom" required>
-                              </div>
-                              <div>
-                                <label for="email" class="col-form-label col-3">Email*:</label>
-                                <input type="email" class="form-control col-9" id="email" 
-                                  placeholder="Votre email" required>
-                              </div>
-                              <div>
-                                <label for="tel" class="col-form-label ">Tel:</label>
-                                <input type="text" class="form-control col-9" id="tel" 
-                                  placeholder="Numéro de téléphone" >
-                              </div>
-                          </div>
-                      </div>
-                  </fieldset>
-                  <br/>
-                  <fieldset>
-                      <label for="textmessage" class="col-form-label  m-2 fw-bold">
-                      Commentaires (facultatif) :</label>
-                      <hr>
-                      <textarea class="form-control" id="textmessage" rows="3" cols="40"></textarea>
-                      <button type="submit" class="btn btn-lg btn-outline-primary" value="envoyer">
-                      Envoyer </button>
-                  </fieldset>
-              </form>
-          </div>
-      </div>
-  </section>
+    <h4>Mentions légales :</h4>
+    <p>Ce site est édité par la mairie de City-Ville. Il a pour seul but d'informer les 
+      habitants de City-Ville des activités proposées par l'association de la maison des jeunes.
+      Nous nous efforçons de maintenir les informations contenues dans ce site, exactes et à jour.
+      Pour toute erreur ou ommission, veuillez nous le signaler.
+    </p>
   </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script> 
