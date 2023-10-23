@@ -1,3 +1,16 @@
 body {
-  background: rgb(244, 245, 207);
+  background: rgba(243, 244, 223, 0.947);
+}
+
+nav a{
+  border-radius: 10%;
+  padding: 10px;
+  background-color: aqua;
+  color:blue;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: darkblue;
+  color:aliceblue;
 }

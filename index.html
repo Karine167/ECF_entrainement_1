@@ -16,26 +16,86 @@
     <div class="col col-4">
       <img src="./asset/Maison_des_jeunes_de_Télimélé_2.jpg" width="100px" alt="Maison des Jeunes">
     </div>
-    <title class="col col-8 mt-4">Maison des Jeunes</title>
-    <nav class="col navbar m-2 bg-body-tertiary">
-      <form class="container-fluid justify-content-start">
-        <button class="btn btn-outline-success me-2" type="button" href="#page1">Présentation</button>
-        <button class="btn btn-sm btn-outline-secondary m-1" type="button" href="#page2">Evénements</button>
-        <button class="btn btn-sm btn-outline-secondary m-1" type="button" href="#footer">Nous contacter</button>
-      </form>
+    <h1 class="col col-8 mt-4">Maison des Jeunes</h1>
+    <nav class="col navbar m-2 bg-body-tertiary container-fluid justify-content-start"
+    aria-label="menu principal">
+      <a class="me-2 nav-link" href="#home" active>Présentation</a>
+      <a class="m-1 nav-link"  href="#evenements">Evénements</a>
+      <a class="m-1 nav-link"  href="#footer">Nous contacter</a>
     </nav>
   </header>
-  <main>
-    <section id="page1">
-      <h1>Présentation de l'association :</h1>
+  <main role="main">
+    <section id="home">
+      <h2>Présentation de l'association :</h2>
 
     </section>
-    <section id="page2">
-      <h1>Nos événements :</h1>
+    <section id="evenements">
+      <h2>Nos événements :</h2>
     </section>
   </main>
   <footer id="footer">
-
+    <hr>
+    <h3>Informations pratiques :</h3>
+    <p class="mb-2">Vous nous trouverez très facilement, sur la place de l'église,
+    à côté de la mairie.</p>
+    <p class="m-1"> La maison des jeunes est ouverte :
+      <ul>
+        <li>tous les jours de semaine entre 15h et 19h,</li>
+        <li>et le samedi de 14h à 18h</li>
+      </ul>
+    </p>
+    <hr>
+    <section id="contact" class="m-1">
+      <h2>Nous contacter :</h2>
+      <p class="fs-0 text-bg-light rounded p-1 mt-1"> Pour toutes questions 
+      concernant notre association, nos activités ou si vous souhaitez tout 
+      simplement nous rejoindre, n'hésitez pas à remplir le formulaire ci-dessous, 
+      afin que nous puissions fixer un Rendez-vous pour nous rencontrer.
+      </p>
+      <div class="row">
+          <div class="ps-3 justify-content-center">
+              <form action="" method="POST">
+                  <fieldset> 
+                      <legend class="text-start text-primary bg-light"> Vos 
+                          coordonnées :</legend>
+                      <div class="container text-smaller justify-content-center">
+                          <div class="row mb-3 g-3">
+                              <div>
+                                <label for="nom" class="col-form-label col-3">NOM *:</label>
+                                <input type="text" class="form-control col-9" id="nom" 
+                                  placeholder="Votre nom" required>
+                              </div>
+                              <div>
+                                <label for="prenom2" class="col-form-label col-3">Prenom *:</label>
+                                <input type="text" class="form-control col-9" id="prenom" 
+                                  placeholder="Votre prénom" required>
+                              </div>
+                              <div>
+                                <label for="email" class="col-form-label col-3">Email*:</label>
+                                <input type="email" class="form-control col-9" id="email" 
+                                  placeholder="Votre email" required>
+                              </div>
+                              <div>
+                                <label for="tel" class="col-form-label ">Tel:</label>
+                                <input type="text" class="form-control col-9" id="tel" 
+                                  placeholder="Numéro de téléphone" >
+                              </div>
+                          </div>
+                      </div>
+                  </fieldset>
+                  <br/>
+                  <fieldset>
+                      <label for="textmessage" class="col-form-label  m-2 fw-bold">
+                      Commentaires (facultatif) :</label>
+                      <hr>
+                      <textarea class="form-control" id="textmessage" rows="3" cols="40"></textarea>
+                      <button type="submit" class="btn btn-lg btn-outline-primary" value="envoyer">
+                      Envoyer </button>
+                  </fieldset>
+              </form>
+          </div>
+      </div>
+  </section>
   </footer>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script> 
