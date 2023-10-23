@@ -1,5 +1,7 @@
 body {
   background: rgba(243, 244, 223, 0.947);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
 }
 
 nav a{
@@ -13,4 +15,12 @@ nav a{
 a:hover{
   background-color: darkblue;
   color:aliceblue;
+}
+
+#footer{
+  font-size: smaller;
+}
+
+.address{
+  list-style-type: none;
 }
