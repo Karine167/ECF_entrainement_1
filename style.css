@@ -1,9 +1,31 @@
 body {
   background: rgba(243, 244, 223, 0.947);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: medium;
+  font-size: 1em;
 }
 
+header{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.photo_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.photo_header img:first-child{
+  border-radius: 40%;
+  width:40%;
+  justify-content: flex-start;
+}
+.photo_header img:nth-child(2){
+  border-radius: 10%;
+  width:40%;
+  justify-content: flex-end;
+}
 nav a{
   border-radius: 10%;
   padding: 10px;
