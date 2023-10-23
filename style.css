@@ -26,6 +26,10 @@ header{
   width:40%;
   justify-content: flex-end;
 }
+.ville{
+  display: inline-flex;
+  font-size: smaller;
+}
 nav a{
   border-radius: 10%;
   padding: 10px;
@@ -45,4 +49,42 @@ a:hover{
 
 .address{
   list-style-type: none;
+}
+
+/*Affichage sur tablettes*/
+@media screen and (min-width:750px) {
+  body{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .ville{ 
+    display: inline;
+    font-size: 1em;
+  }
+  .photo_header img:first-child{
+    width:30%;
+    justify-content: flex-start;
+  }
+  .photo_header img:nth-child(2){
+    width:30%;
+  }
+}
+
+/*Affichage sur desktop*/
+@media screen and (min-width:1000px) {
+  body{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .ville{ 
+    display: inline;
+    font-size: 1em;
+  }
+  .photo_header img:first-child{
+    width:27%;
+    justify-content: flex-start;
+  }
+  .photo_header img:nth-child(2){
+    width:27%;
+  }
 }
