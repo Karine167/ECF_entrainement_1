@@ -30,21 +30,14 @@ header{
   display: inline-flex;
   font-size: smaller;
 }
-nav a{
-  border-radius: 10%;
-  padding: 10px;
-  background-color: aqua;
-  color:blue;
-  text-decoration: none;
-}
 
-a:hover{
+nav a:hover{
   background-color: darkblue;
   color:aliceblue;
 }
 
 #footer{
-  font-size: smaller;
+  font-size: 0.8em;
 }
 
 .address{

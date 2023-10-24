@@ -7,7 +7,7 @@
   <meta name="description" content="La maison des jeunes de notre village vous propose 
   de nombreuses activités(jeux, loisirs) mais aussi une entre-aide précieuse dès que 
   vous en avez besoin (aide aux devoirs, soutien pour les démarches administratives...). 
-  N'hésitez pas à venir nous rejoindre !"
+  N'hésitez pas à venir nous rejoindre !">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,46 +18,88 @@
       <img src="./photos/Crolles_abc22_maison_des_jeunes_et_de_la_culture.JPG"  
       alt="Maison des Jeunes et de la culture">
     </div>
-    <h1 class="mt-4">Maison des Jeunes <span class="ville">de City-Ville</span></h1>
+    <h1 class="mt-4 p-2">Maison des Jeunes <span class="ville">de City-Ville</span></h1>
     <div>
-      <nav class="col navbar m-2 container-fluid justify-content-start"
-        aria-label="menu principal">
-        <a class="ms-2 nav-link" href="#home" active>Présentation</a>
-        <a class="m-1 nav-link"  href="#evenements">Evénements</a>
-        <a class="m-1 nav-link"  href="#footer">Infos</a>
+      <nav class="navbar" aria-label="menu principal">
+        <div class="container-fluid justify-content-start">
+          <a class="btn btn-outline-success nav-link bg-primary-subtle p-2 me-2" type="button" href="#home" active >
+            Présentation</a>
+          <a class="btn btn-outline-success nav-link bg-primary-subtle p-2 me-2" type="button" href="#evenements">Evénements</a>
+          <a class="btn btn-sm btn-outline-secondary bg-secondary-subtle p-2 nav-link" type="button" href="#footer">Infos</a>
+        </div>
       </nav>
     </div>
   </header>
   <main role="main">
     <section id="home">
       <h2>Présentation de l'association :</h2>
-
+      <p>Notre association vous propose de nombreuses activités tout au long de 
+        l'année.</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="evenements">
       <h2>Nos événements :</h2>
     </section>
   </main>
-  <footer id="footer">
+  <footer id="footer" class="m-2 p-2">
     <hr>
     <h4>Informations pratiques :</h4>
     <p class="mb-2">Vous nous trouverez très facilement, sur la place de l'église,
     à côté de la mairie.</p>
-    <h4>Notre adresse : </h4>
+    <h5>Notre adresse : </h5>
     <ul>
       <li class="address">Maison des Jeunes de City-Ville,</li>
       <li class="address">13 place de l'église,</li> 
       <li class="address">56234 City-Ville </li>
     </ul>
-    <h4>Notre numéro de téléphone :</h4> <a href="tel:0535456894-">05 35 45 68 94</a>
-    <h4>Notre email :</h4> <a href="mailto:MJCV@gmail.com">MJCV@gmail.com</a>
-    <h4> Horaires d'ouverture :
+    <h5>Notre numéro de téléphone :</h5> <a href="tel:0535456894-" 
+    class="ms-5">05 35 45 68 94</a>
+    <h5 class="mt-2">Notre email :</h5> <a href="mailto:MJCV@gmail.com" class="ms-5">
+      MJCV@gmail.com</a>
+    <h5 class="mt-2"> Horaires d'ouverture :</h5>
       <ul>
         <li>tous les jours de semaine entre 15h et 19h,</li>
         <li>et le samedi de 14h à 18h</li>
       </ul>
-    </h4>
     <hr>
-    <h4>Mentions légales :</h4>
+    <h5>Mentions légales :</h5>
     <p>Ce site est édité par la mairie de City-Ville. Il a pour seul but d'informer les 
       habitants de City-Ville des activités proposées par l'association de la maison des jeunes.
       Nous nous efforçons de maintenir les informations contenues dans ce site, exactes et à jour.
