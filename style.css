@@ -92,3 +92,31 @@ nav a:hover{
     width:27%;
   }
 }
+
+/*Affichage sur grand écran*/
+@media screen and (min-width:1300px) {
+  body{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.5em;
+  }
+  
+  h1,h2,h3,h4,h5{
+    font-weight: bolder;
+  }
+
+  .ville{ 
+    display: inline;
+    font-size: 1.5em;
+  }
+  .photo_header img:first-child{
+    width:25%;
+    justify-content: flex-start;
+  }
+  .photo_header img:nth-child(2){
+    width:25%;
+  }
+  #footer{
+    font-size: 1.1em;
+  }
+}
