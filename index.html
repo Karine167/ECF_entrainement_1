@@ -126,11 +126,37 @@
           <div class="card-body">
             <h5 class="card-title">Le loto :</h5>
             <p class="card-text">Le premier samedi du mois d'octobre, nous organisons 
-              notre loto. Vous pouvez participer en venant jouer, mais aussi en offrant 
-              des lots, ou bien simplement en donnant un peu de votre temps pour 
-              nous aider lors de cette manifestation. 
+              notre loto.  
             </p>
-            <a href="#loto" class="btn btn-primary">Infos</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+            data-bs-target="#loto">
+              Infos supplémentaires
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="loto" tabindex="-1" aria-labelledby="Informations Loto" 
+            aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infosLoto">Informations 
+                      supplémentaires pour le Loto :</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                    aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Vous pouvez participer en venant jouer, mais aussi en offrant 
+                    des lots, ou bien simplement en donnant un peu de votre temps pour 
+                    nous aider lors de cette manifestation.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card col col-6 mb-3" style="width: 18rem;">
@@ -139,12 +165,38 @@
             <h5 class="card-title">Les truffes au chocolat :</h5>
             <p class="card-text">Pendant les vacances de Noël, nos jeunes adhérents 
               passerons chez vous pour vous proposer des sachets de truffes au 
-              chocolat (offerts généreusement par la Pâtisserie "Au Bon Dessert" 
-              de notre ville). 
+              chocolat. 
               Chaque année, cette vente rencontre un réel succès. Nous vous remercions
               vivement pour votre générosité.
             </p>
-            <a href="#truffes" class="btn btn-primary">Infos</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+            data-bs-target="#truffes">
+              Infos supplémentaires
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="truffes" tabindex="-1" aria-labelledby="Informations Truffes" 
+            aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="InfosTruffes">Informations 
+                      supplémentaires au sujet de la vente de Truffes au Chocolat :</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                    aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Ces sachets sont offerts généreusement par la Pâtisserie "Au Bon Dessert" 
+                    de notre ville et chaque sachet est vendu au prix de 5€.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card col col-6 mb-3" style="width: 18rem;">
@@ -152,15 +204,41 @@
           <div class="card-body">
             <h5 class="card-title">Les oeufs de Pâques :</h5>
             <p class="card-text">Pour le lundi de Pâques, nos jeunes cachent 
-              des oeufs au chocolat (offerts généreusement par la Pâtisserie "Gourmands" 
-              de notre ville), dans le parc de la Mairie. Nous invitons toutes les 
+              des oeufs au chocolat, dans le parc de la Mairie. Nous invitons toutes les 
               familles à venir profiter de ce moment convivial, au cours duquel, 
               notre association vendra des friandises.
-              <br/>
-              Tout aide apportée pour l'encadrement de cette joyeuse partie de 
-              "cache-cache", sera grandement appréciée.
             </p>
-            <a href="#oeufsPaques" class="btn btn-primary">Infos</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+            data-bs-target="#oeufs">
+              Infos supplémentaires
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="oeufs" tabindex="-1" aria-labelledby="Informations Oeufs de Pâques" 
+            aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infosOeufs">Informations 
+                      supplémentaires pour le Loto :</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                    aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Ces oeufs de Pâques sont offerts généreusement par la Pâtisserie "Gourmands" 
+                    de notre ville.
+                    <br/>
+                    Tout aide apportée pour l'encadrement de cette joyeuse partie de 
+                    "cache-cache", sera grandement appréciée.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card col col-6 mb-3" style="width: 18rem;">
@@ -170,7 +248,36 @@
             <p class="card-text">Pour finir, le premier samedi du mois de novembre, 
               nous organisons notre réputée bourse aux jouets. Venez vendre vos vieux 
               jouets, ou bien en acheter, c'est comme vous voulez !</p>
-            <a href="#bourseJouets" class="btn btn-primary">Infos</a>
+          
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+            data-bs-target="#bourseJouets">Infos supplémentaires</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="bourseJouets" tabindex="-1" 
+            aria-labelledby="Informations Bourse aux jouets" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infosBourseJouets">Informations 
+                      supplémentaires pour la bourse aux jouets :</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                    aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    L'entrée est gratuite pour tous les visiteurs.
+                    Les exposants doivent réserver leur emplacement à l'avance au 
+                    prix de 5€ le mètre linéaire.
+                    Des boissons, des crêpes, et des sandwichs seront également en 
+                    vente lors de cette journée.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
