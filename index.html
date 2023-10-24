@@ -22,9 +22,9 @@
     <div>
       <nav class="navbar" aria-label="menu principal">
         <div class="container-fluid justify-content-start">
-          <a class="btn btn-outline-success nav-link bg-primary-subtle p-2 me-2" type="button" href="#home" active >
+          <a class="btn btn-outline-primary nav-link bg-primary-subtle p-2 me-2" type="button" href="#home" active >
             Présentation</a>
-          <a class="btn btn-outline-success nav-link bg-primary-subtle p-2 me-2" type="button" href="#evenements">Evénements</a>
+          <a class="btn btn-outline-primary nav-link bg-primary-subtle p-2 me-2" type="button" href="#evenements">Evénements</a>
           <a class="btn btn-sm btn-outline-secondary bg-secondary-subtle p-2 nav-link" type="button" href="#footer">Infos</a>
         </div>
       </nav>
@@ -42,7 +42,7 @@
               Des activités de détente et de loisirs&#8239;:
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p>Le but ici, est de retrouver le plaisir de jouer ensemble, loin 
                 des écrans. Ces activités vous sont proposées les mercredis et 
@@ -128,6 +128,31 @@
               <p>Le choix de la prochaine activité se fait lors d'une réunion préparatoire.
               N'hésitez pas à nous suggérer des sorties lors de cette réunion.
               </p>
+              <a id="btn-carousel" class="btn btn-primary d-none d-lg-inline">En savoir plus</a>
+              <div id="carousel" class="carousel slide d-none">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./photos/640px-Visite_guidée.jpeg" class="d-block w-100" 
+                    alt="Visite d'un Château">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./photos/Banff_National_Park_(AB,_Canada),_Lake_Louise_--_2022_--_2199.jpg" 
+                    class="d-block w-100" alt="Sortie Kanöe">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./photos/Lioness_at_Blackpool_Zoo_-_geograph.org.uk_-_3281628.jpg" 
+                    class="d-block w-100" alt="Sortie au Zoo">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>

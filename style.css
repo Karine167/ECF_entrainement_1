@@ -59,10 +59,7 @@ header{
   font-size: smaller;
 }
 
-.nav-link a:hover{
-  background-color: darkblue;
-  color:aliceblue;
-}
+
 
 #footer{
   font-size: 0.8em;
