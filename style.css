@@ -4,6 +4,13 @@ body {
   font-size: 1em;
 }
 
+h1,h2,h3,h4,h5{
+  font-weight: bolder;
+}
+
+.accordion-button, .nav-link {
+  font-size: 1em;
+}
 header{
   display:flex;
   flex-direction: column;
@@ -26,7 +33,17 @@ header{
   width:40%;
   justify-content: flex-end;
 }
-
+.presentation-img {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 70%;
+  border-radius: 10%;
+}
+.petite{
+  flex-direction: column;
+  width: 100%;
+}
 #evenements img{
   border-radius: 10%;
 }
@@ -42,7 +59,7 @@ header{
   font-size: smaller;
 }
 
-nav a:hover{
+.nav-link a:hover{
   background-color: darkblue;
   color:aliceblue;
 }
@@ -56,18 +73,33 @@ nav a:hover{
 }
 
 /*Affichage sur tablettes*/
-@media screen and (min-width:750px) {
+@media screen and (min-width:650px) {
   body{
     margin-left: 5%;
     margin-right: 5%;
   }
-
+  .accordion-button, body, .nav-link {
+    font-size: 1.1em;
+  }
   .photo_header img:first-child{
     width:30%;
     justify-content: flex-start;
   }
   .photo_header img:nth-child(2){
     width:30%;
+  }
+  .presentation-img {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap : 10%;
+  }
+  .petite{
+    flex-direction: row;
+    margin-left: 2%;
+    margin-right: 2%;
+    gap : 10%;
+    width: 65%;
   }
 }
 
@@ -77,27 +109,75 @@ nav a:hover{
     margin-left: 15%;
     margin-right: 15%;
   }
-
+  .accordion-button, body, .nav-link {
+    font-size: 1.2em;
+  }
   .photo_header img:first-child{
-    width:27%;
+    width: 27%;
     justify-content: flex-start;
   }
   .photo_header img:nth-child(2){
-    width:27%;
+    width: 27%;
+  }
+  .presentation-img {
+    width: 55%;
+    gap : 15%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .petite{
+    flex-direction: row;
+    margin-left: 4%;
+    margin-right: 4%;
+    gap : 10%;
+    width: 60%;
   }
 }
 
 /*Affichage sur grand écran*/
 @media screen and (min-width:1300px) {
   body{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .accordion-button, body, .nav-link {
     font-size: 1.5em;
   }
   
-  h1,h2,h3,h4,h5{
-    font-weight: bolder;
+  .photo_header img:first-child{
+    width:25%;
+    justify-content: flex-start;
   }
+  .photo_header img:nth-child(2){
+    width:25%;
+  }
+  .presentation-img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 50%;
+    gap : 20%;
+  }
+  .petite{
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap : 10%;
+    width: 60%;
+  }
+  #footer{
+    font-size: 1.1em;
+  }
+}
+/*Affichage sur très grand écran*/
+@media screen and (min-width:2000px) {
+  body{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .accordion-button, body, .nav-link {
+    font-size: 2em;
+  }
+  
 
   .photo_header img:first-child{
     width:25%;
@@ -106,7 +186,20 @@ nav a:hover{
   .photo_header img:nth-child(2){
     width:25%;
   }
+  .presentation-img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 50%;
+    gap : 20%;
+  }
+  .petite{
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap : 10%;
+    width: 60%;
+  }
   #footer{
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
 }
