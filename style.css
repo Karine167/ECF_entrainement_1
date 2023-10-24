@@ -61,10 +61,7 @@ nav a:hover{
     margin-left: 5%;
     margin-right: 5%;
   }
-  .ville{ 
-    display: inline;
-    font-size: 1em;
-  }
+
   .photo_header img:first-child{
     width:30%;
     justify-content: flex-start;
@@ -80,10 +77,7 @@ nav a:hover{
     margin-left: 15%;
     margin-right: 15%;
   }
-  .ville{ 
-    display: inline;
-    font-size: 1em;
-  }
+
   .photo_header img:first-child{
     width:27%;
     justify-content: flex-start;
@@ -105,10 +99,6 @@ nav a:hover{
     font-weight: bolder;
   }
 
-  .ville{ 
-    display: inline;
-    font-size: 1.5em;
-  }
   .photo_header img:first-child{
     width:25%;
     justify-content: flex-start;
