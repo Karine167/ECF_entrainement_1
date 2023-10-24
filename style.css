@@ -26,6 +26,17 @@ header{
   width:40%;
   justify-content: flex-end;
 }
+
+#evenements img{
+  border-radius: 10%;
+}
+.oeufs-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 70%;
+  border-radius: 10%;
+}
 .ville{
   display: inline-flex;
   font-size: smaller;
