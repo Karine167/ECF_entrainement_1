@@ -47,6 +47,12 @@ header{
 #evenements img{
   border-radius: 10%;
 }
+#avertissement{
+  font-size: smaller;
+  border : 1px dashed red;
+  color: darkred;
+  border-radius: 25%;
+}
 .oeufs-photos {
   display: flex;
   flex-direction: row;
