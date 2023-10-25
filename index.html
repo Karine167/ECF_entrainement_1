@@ -13,12 +13,12 @@
 </head>
 <body>
   <header>
-    <div class="photo_header">
+    <div class="photo_header m-2">
       <img src="./photos/Maison_des_jeunes_de_Télimélé_2.jpg" alt="Maison des Jeunes">
       <img src="./photos/Crolles_abc22_maison_des_jeunes_et_de_la_culture.JPG"  
       alt="Maison des Jeunes et de la culture">
     </div>
-    <h1 class="mt-4 p-2">Maison des Jeunes <span class="ville">de City-Ville</span></h1>
+    <h1 class="mt-2 p-2 justify-content-center ">Maison des Jeunes <span class="ville">de City-Ville</span></h1>
     <div>
       <nav class="navbar" aria-label="menu principal">
         <div class="container-fluid justify-content-start">
@@ -32,17 +32,17 @@
     </div>
   </header>
   <main role="main">
-    <article id="avertissement" class="text-bg-warning-subtle p-3">
-      <h2 class="p-1 ms-5">Avertissement !</h2>
+    <article id="avertissement" class="text-bg-warning-subtle">
+      <h2 class="p-1 ms-3">Avertissement&#8239;!</h2>
       <p>Ce site est un entraînement pour une formation de développeur web. <br/>
         Ainsi, toutes les informations données dans ce site (noms, lieux, activités, événements), 
         sont totalement fictifs.</p>
     </article>
-    <section id="home" class="m-1 p-2">
+    <section id="home" class="mt-1 p-2">
       <h2>Présentation de l'association&#8239;:</h2>
       <p>Notre association vous propose de nombreuses activités tout au long de 
         l'année.</p>
-      <div class="accordion p-2" id="accordion-home">
+      <div class="accordion " id="accordion-home">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -165,12 +165,12 @@
         </div>
       </div>
     </section>
-    <section id="evenements" class="m-1 p-2">
+    <section id="evenements" class="mt-1 p-2">
       <h2>Nos événements&#8239;:</h2>
       <p>Afin de récolter des dons pour financer le bon fonctionnement et le bon 
         déroulement des sorties de l'association, nous organisons plusieurs événements.</p>
-      <div class="container-fluid row  justify-content-evenly ">
-        <div class="card col col-6 mb-3 p-3" style="width: 18rem;">
+      <div class="container-fluid row  p-2 justify-content-evenly ">
+        <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
           <img src="./photos/640px-Villemanoche-FR-89-loto_2018-a01.jpg" class="card-img-top mb-3" 
           alt="loto dans la salle des fêtes">
           <img src="./photos/640px-Villemanoche-FR-89-loto_2018-a05.jpg" class="card-img-top" 
@@ -213,7 +213,7 @@
             </div>
           </div>
         </div>
-        <div class="card col col-6 mb-3 p-3" style="width: 18rem;">
+        <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
           <img src="./photos/Bowl_of_truffles.jpg" class="card-img-top" alt="Assiettes de truffes au chocolat">
           <div class="card-body">
             <h4 class="card-title">Les truffes au chocolat&#8239;:</h4>
@@ -255,7 +255,7 @@
             </div>
           </div>
         </div>
-        <div class="card col col-6 mb-3 p-3" style="width: 18rem;">
+        <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
             <img src="./photos/Ilôt_de_l'Aa.jpg" class="card-img-top mb-2" alt="Chasse aux oeufs de Pâques">
             <div class="oeufs-photos">
               <img src="./photos/Primula_vulgaris_'Gigha_White'_(Primevère_commune)_-_18.jpg" 
@@ -305,7 +305,7 @@
             </div>
           </div>
         </div>
-        <div class="card col col-6 mb-3 p-3" style="width: 18rem;">
+        <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
           <img src="./photos/640px-Second-hand_market_in_Champigny-sur-Marne_077.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h4 class="card-title">La bourse aux jouets&#8239;:</h4>
@@ -348,53 +348,56 @@
       </div>
     </section>
   </main>
-  <footer id="footer" class="m-2 p-2">
-    <hr>
-    <h4>Informations pratiques&#8239;:</h4>
-    <p class="mb-2">Vous nous trouverez très facilement, sur la place de l'église,
-    à côté de la mairie.</p> 
-    <a href="https://fr.mappy.com">Itinéraire</a>
-    <h5>Notre adresse&#8239;:</h5>
-    <ul>
-      <li class="address">Maison des Jeunes de City-Ville,</li>
-      <li class="address">13 place de l'église,</li> 
-      <li class="address">56234 City-Ville </li>
-    </ul>
-
-    <h5>Numéro de téléphone du président de l'association&#8239;:</h5> <a href="tel:01xxxxxxxx" 
-    class="ms-5">01 XX XX XX XX</a>
-    <h5 class="mt-2">Notre email&#8239;:</h5> <a href="mailto:MJCV@gmail.com" class="ms-5">
-      MJCV@adresse.monsite</a>
-    <h5 class="mt-2"> Horaires d'ouverture&#8239;:</h5>
+  <hr>
+  <footer id="footer" class=" container-fluid row  justify-content-evenly m-2 p-2">
+    <div class="col-md-6">
+      <h4>Informations pratiques&#8239;:</h4>
+      <p class="mb-2">Vous nous trouverez très facilement, sur la place de l'église,
+      à côté de la mairie.</p> 
+      <a href="https://fr.mappy.com">Itinéraire</a>
+      <h5>Notre adresse&#8239;:</h5>
       <ul>
-        <li>tous les jours de semaine entre 16h et 19h,</li>
-        <li>et le samedi de 14h à 18h</li>
+        <li class="address">Maison des Jeunes de City-Ville,</li>
+        <li class="address">13 place de l'église,</li> 
+        <li class="address">56234 City-Ville </li>
       </ul>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-info" data-bs-toggle="modal" 
-    data-bs-target="#bureau">Les membres du bureau</button>
+      <h5>Numéro de téléphone du président de l'association&#8239;:</h5> <a href="tel:01xxxxxxxx" 
+      class="ms-5">01 XX XX XX XX</a>
+      <h5 class="mt-2">Notre email&#8239;:</h5> <a href="mailto:MJCV@gmail.com" class="ms-5">
+      MJCV@adresse.monsite</a>
+    </div>
+    <div class="col-md-6">
+      <h5 class="mt-2"> Horaires d'ouverture&#8239;:</h5>
+        <ul>
+          <li>tous les jours de semaine entre 16h et 19h,</li>
+          <li>et le samedi de 14h à 18h</li>
+        </ul>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-info" data-bs-toggle="modal" 
+      data-bs-target="#bureau">Les membres du bureau</button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="bureau" tabindex="-1" 
-    aria-labelledby="Les membres du bureau de l'association" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="bureauAssoc">Les membres du bureau de l'association&#8239;:</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" 
-            aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Mr Jacques de Compostelle (président) <br/>
-            Mme Marie Latour (vice-présidente) <br/>
-            Mme Jeanne Darck (secrétaire) <br/>
-            Mr Gustave Eiffel (secrétaire adjoint) <br/>
-            Mr Dany Lepirate (trésorier) <br/>
-            Mme Martine Lépicière (trésorier adjoint) <br/>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              Fermer</button>
+      <!-- Modal -->
+      <div class="modal fade" id="bureau" tabindex="-1" 
+      aria-labelledby="Les membres du bureau de l'association" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="bureauAssoc">Les membres du bureau de l'association&#8239;:</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" 
+              aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Mr Jacques de Compostelle (président) <br/>
+              Mme Marie Latour (vice-présidente) <br/>
+              Mme Jeanne Darck (secrétaire) <br/>
+              Mr Gustave Eiffel (secrétaire adjoint) <br/>
+              Mr Dany Lepirate (trésorier) <br/>
+              Mme Martine Lépicière (trésorier adjoint) <br/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Fermer</button>
+            </div>
           </div>
         </div>
       </div>
