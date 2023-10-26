@@ -18,6 +18,11 @@ a:hover{
   box-shadow: 3px 5px 3px rgb(141, 217, 246);
 }
 
+img:hover{
+  border : blue 2px solid;
+  box-shadow: 3px 5px 3px rgb(141, 217, 246);
+}
+
 h1,h2,h3,h4,h5{
   font-weight: bolder;
 }
@@ -25,6 +30,7 @@ h1,h2,h3,h4,h5{
 .accordion-button, .nav-link {
   font-size: 1em;
 }
+
 header{
   display:flex;
   padding: 3%;
@@ -32,21 +38,25 @@ header{
   flex-wrap: nowrap;
   align-items: center;
 }
+
 .photo_header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .photo_header img:first-child{
   border-radius: 40%;
   width:40%;
   justify-content: flex-start;
 }
+
 .photo_header img:nth-child(2){
   border-radius: 10%;
   width:40%;
   justify-content: flex-end;
 }
+
 .presentation-img {
   display: flex;
   flex-direction: row;
@@ -54,14 +64,19 @@ header{
   width: 70%;
   border-radius: 10%;
 }
+
 .petite{
   flex-direction: column;
   width: 100%;
 }
+
 #evenements img{
   border-radius: 10%;
 }
+
 #avertissement{
+  background-color: rgb(247, 231, 139);
+  opacity : 0.5;
   font-size: smaller;
   padding: 5%;
   border : 1px dashed red;
@@ -75,6 +90,7 @@ header{
   width: 70%;
   border-radius: 10%;
 }
+
 .ville{
   display: inline-flex;
   font-size: smaller;
@@ -87,10 +103,8 @@ header{
 .address{
   list-style-type: none;
 }
-img:hover{
-  border : blue 2px solid;
-  box-shadow: 3px 5px 3px rgb(141, 217, 246);
-}
+
+
 /*Affichage sur tablettes*/
 @media screen and (min-width:650px) {
   body{
