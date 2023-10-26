@@ -75,7 +75,10 @@ header{
 .address{
   list-style-type: none;
 }
-
+img:hover{
+  border : blue 2px solid;
+  box-shadow: 5px 5px 5px rgb(68, 186, 232);
+}
 /*Affichage sur tablettes*/
 @media screen and (min-width:650px) {
   body{

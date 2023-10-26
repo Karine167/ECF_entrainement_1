@@ -1,9 +1,11 @@
+// event sur le bouton diaporama pour le faire apparaître
 const btn_carousel = document.getElementById('btn-carousel');
 const carousel_show = document.getElementById('carousel');
 btn_carousel.addEventListener('click',()=>{
   carousel_show.classList.remove('d-none');
 })
 
+// fonction pour zoomer une image avec création d'une div
 function zoom(img){
   const div_img = document.createElement('div');
   div_img.innerHTML=`<div class="modal-dialog" id="zoom_img">
@@ -27,6 +29,7 @@ function zoom(img){
   });
 }
 
+// Ajout des events sur les images pour zoom
 const img_doc = document.images;
 for (let i=0; i<img_doc.length; i++){
   if ((img_doc[i].alt != "Visite d'un Château")&&(img_doc[i].alt != "Sortie Kanöe")&&(img_doc[i].alt != "Sortie au Zoo")) {
@@ -36,6 +39,7 @@ for (let i=0; i<img_doc.length; i++){
   }
 }
 
+// Event sur le btn close pour disparition du message d'avertissement
 const btn_close_advert = document.getElementById('btn_advert');
 const advert = document.getElementById('avertissement');
 btn_close_advert.addEventListener('click', ()=>{
