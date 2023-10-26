@@ -44,11 +44,13 @@
         Ainsi, toutes les informations données dans ce site (noms, lieux, activités, événements), 
         sont totalement fictifs.</p>
     </article>
+    <!--Première page : Présentation de l'association-->
     <section id="home" class="mt-1 p-2">
       <h2>Présentation de l'association&#8239;:</h2>
       <p>Notre association vous propose de nombreuses activités tout au long de 
         l'année.</p>
       <div class="accordion " id="accordion-home">
+        <!--Accordéon partie 1 : Détente Loisirs-->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -87,6 +89,7 @@
             </div>
           </div>
         </div>
+        <!--Accordéon partie  : Activités studieuses-->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -121,6 +124,7 @@
             </div>
           </div>
         </div>
+        <!--Accordéon partie 3 : Sorties pédagogiques-->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -141,6 +145,7 @@
               <p>Le choix de la prochaine activité se fait lors d'une réunion préparatoire.
               N'hésitez pas à nous suggérer des sorties lors de cette réunion.
               </p>
+              <!--Carousel qui ne s'affiche qu'à partir de la taille tablette-->
               <a id="btn-carousel" class="btn btn-primary fw-bold d-none d-md-inline">Diaporama</a>
               <div id="carousel" class="carousel slide d-none">
                 <div class="carousel-inner">
@@ -171,11 +176,13 @@
         </div>
       </div>
     </section>
+    <!--Deuxième page : Les événements de l'association-->
     <section id="evenements" class="mt-1 p-2">
       <h2>Nos événements&#8239;:</h2>
       <p>Afin de récolter des dons pour financer le bon fonctionnement et le bon 
         déroulement des sorties de l'association, nous organisons plusieurs événements.</p>
       <div class="container-fluid row  p-2 justify-content-evenly ">
+        <!-- Evenement 1 : Loto-->
         <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
           <img src="./photos/640px-Villemanoche-FR-89-loto_2018-a01.jpg" class="card-img-top mb-3" 
           alt="loto dans la salle des fêtes">
@@ -188,13 +195,13 @@
             </p>
           </div>
           <div class="card-footer bg-white">
-            <!-- Button trigger modal -->
+            <!-- Button trigger modal pour le loto -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
             data-bs-target="#loto">
               Infos supplémentaires
             </button>
 
-            <!-- Modal -->
+            <!-- Modal pour le loto-->
             <div class="modal fade" id="loto" tabindex="-1" aria-labelledby="Informations Loto" 
             aria-hidden="true">
               <div class="modal-dialog">
@@ -206,9 +213,13 @@
                     aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Vous pouvez participer en venant jouer, mais aussi en offrant 
+                    <p>Vous pouvez participer en venant jouer, mais aussi en offrant 
                     des lots, ou bien simplement en donnant un peu de votre temps pour 
-                    nous aider lors de cette manifestation.
+                    nous aider lors de cette manifestation. </p>
+                    <p>N'hésitez pas à nous contacter par mail à partir du 15 septembre si vous désirez
+                    apporter une contribution pour cette journée. </p>
+                    Email : <a href="mailto:MJCV@gmail.com" 
+                    class="ms-5">MJCV@adresse.monsite</a> 
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -219,6 +230,50 @@
             </div>
           </div>
         </div>
+        <!-- Evenement 2 : Bourse aux jouets-->
+        <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
+          <img src="./photos/640px-Second-hand_market_in_Champigny-sur-Marne_077.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">La bourse aux jouets&#8239;:</h4>
+            <p class="card-text">Le premier samedi du mois de novembre, 
+              nous organisons notre réputée bourse aux jouets. Venez vendre vos vieux 
+              jouets, ou bien en acheter, c'est comme vous voulez !</p>
+          </div>
+          <div class="card-footer bg-white">
+            <!-- Button trigger modal Bourse aux jouets -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+            data-bs-target="#bourseJouets">Infos supplémentaires</button>
+
+            <!-- Modal Bourse aux jouets-->
+            <div class="modal fade" id="bourseJouets" tabindex="-1" 
+            aria-labelledby="Informations Bourse aux jouets" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infosBourseJouets">Informations 
+                      supplémentaires pour la bourse aux jouets&#8239;:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" 
+                    aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>L'entrée est gratuite pour tous les visiteurs.
+                    Des boissons, des crêpes, et des sandwichs seront également en 
+                    vente lors de cette journée.</p>
+                    <p>Les exposants doivent réserver leur emplacement à l'avance au 
+                    prix de 5€ le mètre linéaire en nous contactant par mail à partir du 15 octobre.</p>
+                    Email : <a href="mailto:MJCV@gmail.com" 
+                    class="ms-5">MJCV@adresse.monsite</a> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Fermer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Evenement 3 : Truffes au chocolat-->
         <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
           <img src="./photos/Bowl_of_truffles.jpg" class="card-img-top" alt="Assiettes de truffes au chocolat">
           <div class="card-body">
@@ -231,13 +286,13 @@
             </p>
           </div>
           <div class="card-footer bg-white">
-            <!-- Button trigger modal -->
+            <!-- Button trigger modal truffes -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
             data-bs-target="#truffes">
               Infos supplémentaires
             </button>
 
-            <!-- Modal -->
+            <!-- Modal truffes -->
             <div class="modal fade" id="truffes" tabindex="-1" aria-labelledby="Informations Truffes" 
             aria-hidden="true">
               <div class="modal-dialog">
@@ -249,8 +304,13 @@
                     aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Ces sachets sont offerts généreusement par la Pâtisserie "Au Bon Dessert" 
-                    de notre ville et chaque sachet est vendu au prix de 5€.
+                    <p>Ces sachets sont offerts généreusement par la Pâtisserie 
+                      "Au Bon Dessert" de notre ville et chaque sachet est vendu
+                        au prix de 5€.</p>
+                    <p>N'hésitez pas à nous contacter par mail à partir du 15 décembre
+                        si vous désirez réserver quelques sachets à l'avance. </p>
+                      Email : <a href="mailto:MJCV@gmail.com" 
+                      class="ms-5">MJCV@adresse.monsite</a> 
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -261,6 +321,7 @@
             </div>
           </div>
         </div>
+        <!-- Evenement 4 : Les oeufs de Pâques-->
         <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
             <img src="./photos/Ilôt_de_l'Aa.jpg" class="card-img-top mb-2" alt="Chasse aux oeufs de Pâques">
             <div class="oeufs-photos">
@@ -274,17 +335,17 @@
             <p class="card-text">Pour le lundi de Pâques, nos jeunes cachent 
               des oeufs au chocolat, dans le parc de la Mairie. Nous invitons toutes les 
               familles à venir profiter de ce moment convivial, au cours duquel, 
-              notre association vendra des friandises.
+              notre association vendra également des oeufs et des sachets de friandises.
             </p>
           </div>
           <div class="card-footer bg-white">
-            <!-- Button trigger modal -->
+            <!-- Button trigger modal Oeufs de Pâques-->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
             data-bs-target="#oeufs">
               Infos supplémentaires
             </button>
 
-            <!-- Modal -->
+            <!-- Modal Oeufs de Pâques-->
             <div class="modal fade" id="oeufs" tabindex="-1" aria-labelledby="Informations Oeufs de Pâques" 
             aria-hidden="true">
               <div class="modal-dialog">
@@ -296,11 +357,19 @@
                     aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    Ces oeufs de Pâques sont offerts généreusement par la Pâtisserie "Gourmands" 
-                    de notre ville.
+                    <p>Ces oeufs de Pâques sont offerts généreusement par la Pâtisserie "Gourmands" 
+                    de notre ville.  
+                    <br/>
+                    Les Oeufs et sachets de friandises vendus par notre association 
+                    sont au prix de 5€ l'unité.
                     <br/>
                     Tout aide apportée pour l'encadrement de cette joyeuse partie de 
-                    "chasse", sera grandement appréciée.
+                    "chasse", sera grandement appréciée.</p>
+                    <p>N'hésitez pas à nous contacter par mail à partir du 25 Mars si vous désirez
+                      réserver quelques oeufs et sachets de friandises à l'avance, 
+                      ou bien si vous désirez encadrer cette "chasse aux oeufs". </p>
+                      Email : <a href="mailto:MJCV@gmail.com" 
+                      class="ms-5">MJCV@adresse.monsite</a> 
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -310,51 +379,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="card col-md-6 col-lg-4 col-xl-3 mb-3 p-3" >
-          <img src="./photos/640px-Second-hand_market_in_Champigny-sur-Marne_077.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h4 class="card-title">La bourse aux jouets&#8239;:</h4>
-            <p class="card-text">Pour finir, le premier samedi du mois de novembre, 
-              nous organisons notre réputée bourse aux jouets. Venez vendre vos vieux 
-              jouets, ou bien en acheter, c'est comme vous voulez !</p>
-          </div>
-          <div class="card-footer bg-white">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
-            data-bs-target="#bourseJouets">Infos supplémentaires</button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="bourseJouets" tabindex="-1" 
-            aria-labelledby="Informations Bourse aux jouets" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="infosBourseJouets">Informations 
-                      supplémentaires pour la bourse aux jouets&#8239;:</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" 
-                    aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    L'entrée est gratuite pour tous les visiteurs.
-                    Les exposants doivent réserver leur emplacement à l'avance au 
-                    prix de 5€ le mètre linéaire.
-                    Des boissons, des crêpes, et des sandwichs seront également en 
-                    vente lors de cette journée.
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                      Fermer</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>  
       </div>
     </section>
   </main>
   <hr>
+  <!-- Pies de page pour les infos pratiques -->
   <footer id="footer" class=" container-fluid row  justify-content-evenly m-2 p-2">
     <div class="col-md-6">
       <h4>Informations pratiques&#8239;:</h4>
@@ -369,20 +399,20 @@
       </ul>
       <h5>Numéro de téléphone du président de l'association&#8239;:</h5> <a href="tel:01xxxxxxxx" 
       class="ms-5">01 XX XX XX XX</a>
-      <h5 class="mt-2">Notre email&#8239;:</h5> <a href="mailto:MJCV@gmail.com" class="ms-5">
+      <h5 class="mt-2">Notre email&#8239;:</h5> <a href="mailto:MJCV@adresse.monsite" class="ms-5">
       MJCV@adresse.monsite</a>
     </div>
     <div class="col-md-6">
       <h5 class="mt-2"> Horaires d'ouverture&#8239;:</h5>
         <ul>
-          <li>tous les jours de semaine entre 16h et 19h,</li>
+          <li>Du lundi au vendredi : entre 16h et 19h,</li>
           <li>et le samedi de 14h à 18h</li>
         </ul>
-      <!-- Button trigger modal -->
+      <!-- Button trigger modal Membres du bureau -->
       <button type="button" class="btn btn-info" data-bs-toggle="modal" 
       data-bs-target="#bureau">Les membres du bureau</button>
 
-      <!-- Modal -->
+      <!-- Modal Membres du bureau-->
       <div class="modal fade" id="bureau" tabindex="-1" 
       aria-labelledby="Les membres du bureau de l'association" aria-hidden="true">
         <div class="modal-dialog">
@@ -393,12 +423,12 @@
               aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              Mr Jacques de Compostelle (président) <br/>
-              Mme Marie Latour (vice-présidente) <br/>
-              Mme Jeanne Darck (secrétaire) <br/>
-              Mr Gustave Eiffel (secrétaire adjoint) <br/>
+              Mr  Gustave Latour-Eiffel  (président) <br/>
+              Mme Marie-ange Toinette (vice-présidente) <br/>
+              Mme Johanna Gutenberg (secrétaire) <br/>
+              Mr Samuel Ward-Remington  (secrétaire adjoint) <br/>
               Mr Dany Lepirate (trésorier) <br/>
-              Mme Martine Lépicière (trésorier adjoint) <br/>
+              Mme Keyssie Registreuse  (trésorier adjoint) <br/>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -409,6 +439,7 @@
       </div>
     </div>
     <hr>
+    <!--Mentions Légales-->
     <h5>Mentions légales&#8239;:</h5>
     <p>Ce site est édité par la mairie de City-Ville. Il a pour seul but d'informer les 
       habitants de City-Ville des activités proposées par l'association de la maison des jeunes.
