@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5{
 }
 
 .accordion-button, .nav-link {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 header{
@@ -116,9 +116,11 @@ header{
     width: 700px;
     height: 500px;
   }
-
-  .accordion-button, body, .nav-link {
+  body, .nav-link{
     font-size: 1.1em;
+  }
+  .accordion-button {
+    font-size: 0.9em;
   }
   .photo_header img:first-child{
     width:30%;
@@ -148,8 +150,11 @@ header{
     margin-left: 15%;
     margin-right: 15%;
   }
-  .accordion-button, body, .nav-link {
-    font-size: 1.2em;
+  body, .nav-link{
+    font-size: 1.3em;
+  }
+  .accordion-button {
+    font-size: 1em;
   }
   .photo_header img:first-child{
     width: 27%;
@@ -183,10 +188,13 @@ header{
     margin-left: 10%;
     margin-right: 10%;
   }
-  .accordion-button, body, .nav-link {
+  
+  body, .nav-link{
     font-size: 1.5em;
   }
-  
+  .accordion-button {
+    font-size: 1.1em;
+  }
   .photo_header img:first-child{
     width:25%;
     justify-content: flex-start;
@@ -221,9 +229,13 @@ header{
     margin-left: 10%;
     margin-right: 10%;
   }
-  .accordion-button, body, .nav-link {
+  body, .nav-link{
     font-size: 2em;
   }
+  .accordion-button {
+    font-size: 1.8em;
+  }
+  
   .photoCarousel{
     width: 1200px;
     height: 900px;
