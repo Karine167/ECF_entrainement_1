@@ -5,6 +5,7 @@ btn_carousel.addEventListener('click',()=>{
   carousel_show.classList.remove('d-none');
 })
 
+/*
 // fonction pour zoomer une image avec création d'une div
 function zoom(img){
   const div_img = document.createElement('div');
@@ -27,6 +28,25 @@ function zoom(img){
     modal_zoom.remove();
     window.location.reload();
   });
+}*/
+// fonction zoom sur une image
+function zoom(img){
+    // Get the modal
+    const zoomModal = document.getElementById("myModal");
+
+    // use the image and insert it inside the modal - use its "alt" text as a caption
+    const modalImg = document.getElementById("img01");
+    const captionText = document.getElementById("caption");
+    
+    zoomModal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+
+    //gestion du bouton de fermeture de la fenêtre modale
+    const btn_close_zoom = document.getElementById('close_zoom');
+    btn_close_zoom.addEventListener('click',()=>{
+      zoomModal.style.display = "none";
+    });
 }
 
 // Ajout des events sur les images pour zoom
