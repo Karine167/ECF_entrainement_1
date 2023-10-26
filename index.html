@@ -155,18 +155,32 @@
               <!--Carousel qui ne s'affiche qu'à partir de la taille tablette-->
               <a id="btn-carousel" class="btn btn-primary fw-bold d-none d-md-inline">Diaporama</a>
               <div id="carousel" class="carousel slide d-none">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./photos/640px-Visite_guidée.jpeg" class="d-block w-auto photoCarousel" 
                     alt="Visite d'un Château">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Visite du Château de Ville-Château</h5>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./photos/Banff_National_Park_(AB,_Canada),_Lake_Louise_--_2022_--_2199.jpg" 
-                    class="d-block w-auto photoCarousel" alt="Sortie Kanöe">
+                    class="d-block w-auto photoCarousel" alt="Sortie Kanoë">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Sortie Kanoë sur le lac Touprès</h5>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./photos/Lioness_at_Blackpool_Zoo_-_geograph.org.uk_-_3281628.jpg" 
                     class="d-block w-auto photoCarousel" alt="Sortie au Zoo">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Sortie au zoo de Reserve-Ville</h5>
+                    </div>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
