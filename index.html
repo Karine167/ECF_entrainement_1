@@ -13,12 +13,14 @@
 </head>
 <body>
   <header>
+    <!-- 2 Photos de présentation placées côte à côte puis un titre en-dessous--> 
     <div class="photo_header m-2">
       <img src="./photos/Maison_des_jeunes_de_Télimélé_2.jpg" alt="Maison des Jeunes">
       <img src="./photos/Crolles_abc22_maison_des_jeunes_et_de_la_culture.JPG"  
       alt="Maison des Jeunes et de la culture">
     </div>
     <h1 class="mt-2 p-2 justify-content-center ">Maison des Jeunes <span class="ville">de City-Ville</span></h1>
+    <!-- Barre de navigation-->
     <div>
       <nav class="navbar" aria-label="menu principal">
         <div class="container-fluid justify-content-start">
@@ -32,8 +34,12 @@
     </div>
   </header>
   <main role="main">
+    <!-- Avertissement-->
     <article id="avertissement" class="text-bg-warning-subtle">
-      <h2 class="p-1 ms-3">Avertissement&#8239;!</h2>
+      <div class="row">
+        <h2 class="p-1 ms-3 col col-10">Avertissement&#8239;!   </h2>                   
+        <button class="btn-close col col-1" type="button" id="btn_advert" aria-label="Close" data-bs-dismiss="article"></button>
+      </div>
       <p>Ce site est un entraînement pour une formation de développeur web. <br/>
         Ainsi, toutes les informations données dans ce site (noms, lieux, activités, événements), 
         sont totalement fictifs.</p>
@@ -49,7 +55,7 @@
               Des activités de détente et de loisirs&#8239;:
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-home">
             <div class="accordion-body">
               <p>Le but ici, est de retrouver le plaisir de jouer ensemble, loin 
                 des écrans. Ces activités vous sont proposées les mercredis et 
@@ -87,7 +93,7 @@
               Des activités studieuses&#8239;: 
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-home">
             <div class="accordion-body">
               <p>L'association, encadrée par des adultes et des animateurs, vous 
                 propose également des activités pédagogiques, tous les jours de 16h à 19h.</p>
@@ -121,7 +127,7 @@
               Les sorties pédagogiques&#8239;:
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-home">
             <div class="accordion-body">
               <p>Tous les deux mois environ, une sortie est organisée pour les adhérents 
               de l'association. </p>

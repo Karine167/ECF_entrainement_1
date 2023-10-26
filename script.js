@@ -35,3 +35,9 @@ for (let i=0; i<img_doc.length; i++){
     });
   }
 }
+
+const btn_close_advert = document.getElementById('btn_advert');
+const advert = document.getElementById('avertissement');
+btn_close_advert.addEventListener('click', ()=>{
+  advert.remove();
+})
