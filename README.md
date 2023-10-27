@@ -3,3 +3,4 @@
 # et contenant 2 pages : Présentations et Evénements
 # Le site est statique donc il n'y a pas de formulaire, ni de création de compte, ou de page de connexion
 # mais il doit être codé en "mobile first" avec une interface pouvant s'adapter aux autres tailles d'écrans
+# essai de mise en ligne avec github pages
