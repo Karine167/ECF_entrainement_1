@@ -40,6 +40,22 @@ function zoom(img){
     
     zoomModal.style.display = "block";
     modalImg.src = img.src;
+    //Détermination de la taille de l'image zoomée et du contenant
+    const modalZoom = document.getElementById('zoomModalContent');
+    const maxDimWidth = document.documentElement.clientWidth;
+    const maxDimHeight = document.documentElement.clientHeight;
+    //console.log(maxDimHeight, maxDimWidth)
+    modalZoom.style = `width: 95vw; height: 95vh; 
+    position:fixed; top: 2%; left: 2%;`
+    let ratioZoom = img.width/img.heigt;
+    if (maxDimWidth <= maxDimHeight){
+      modalImg.style =`width: 80vw; max-height: 75vh; aspect-ratio: ${ratioZoom};`;
+    }else {
+      modalImg.style =`height: 75vh; max-width: 80vw; aspect-ratio: ${ratioZoom};`;
+    }
+    
+        
+    //légende sous l'image
     captionText.innerHTML = img.alt;
 
     //gestion du bouton de fermeture de la fenêtre modale
